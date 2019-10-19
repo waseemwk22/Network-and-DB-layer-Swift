@@ -10,4 +10,4 @@ https://medium.com/@waseem.wk22_8164/highly-customizable-network-layer-in-swift-
 
 
 Article # 2: Reusable & Generic Database Layer
-<coming soon>
+https://medium.com/@waseem.wk22_8164/reusable-generic-database-layer-in-swift-7950d604883b
