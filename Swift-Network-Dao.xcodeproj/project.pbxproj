@@ -38,11 +38,11 @@
 		04C78A4A235B3ED40077769F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78A48235B3ED40077769F /* HttpMethod.swift */; };
 		04C78A4B235B3ED40077769F /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78A49235B3ED40077769F /* ApiResponse.swift */; };
 		04C78A4D235B3EFD0077769F /* DomainBaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78A4C235B3EFD0077769F /* DomainBaseEntity.swift */; };
-		2A156A69972C11413664428F /* Pods_NetworkApiArticle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41314B23F4EF6EE99F5C628B /* Pods_NetworkApiArticle.framework */; };
+		851CA5595B7876B8173CCBCC /* Pods_Swift_Network_Dao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE096ADC11D32BCA22B4BCB /* Pods_Swift_Network_Dao.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0432E1152343CB4500874AF3 /* NetworkApiArticle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkApiArticle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0432E1152343CB4500874AF3 /* Swift-Network-Dao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Network-Dao.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0432E1182343CB4500874AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0432E11A2343CB4500874AF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0432E11C2343CB4500874AF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +75,9 @@
 		04C78A48235B3ED40077769F /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		04C78A49235B3ED40077769F /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		04C78A4C235B3EFD0077769F /* DomainBaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainBaseEntity.swift; sourceTree = "<group>"; };
-		41314B23F4EF6EE99F5C628B /* Pods_NetworkApiArticle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkApiArticle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35618A49731FC5B7F0B740B2 /* Pods-Swift-Network-Dao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Network-Dao.release.xcconfig"; path = "Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao.release.xcconfig"; sourceTree = "<group>"; };
+		4CE096ADC11D32BCA22B4BCB /* Pods_Swift_Network_Dao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Network_Dao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF83523A8CF24E93A041FEC1 /* Pods-Swift-Network-Dao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Network-Dao.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao.debug.xcconfig"; sourceTree = "<group>"; };
 		B86C6009A65ED886DE62F5C1 /* Pods-NetworkApiArticle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkApiArticle.release.xcconfig"; path = "Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle.release.xcconfig"; sourceTree = "<group>"; };
 		FE7876A8655AA75546841C0D /* Pods-NetworkApiArticle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkApiArticle.debug.xcconfig"; path = "Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A156A69972C11413664428F /* Pods_NetworkApiArticle.framework in Frameworks */,
+				851CA5595B7876B8173CCBCC /* Pods_Swift_Network_Dao.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +97,7 @@
 		0432E10C2343CB4500874AF3 = {
 			isa = PBXGroup;
 			children = (
-				0432E1172343CB4500874AF3 /* NetworkApiArticle */,
+				0432E1172343CB4500874AF3 /* SwiftNetworkDao */,
 				0432E1162343CB4500874AF3 /* Products */,
 				3A7519BD6B535112B7EF208F /* Pods */,
 				3A6BB1D8D8B2E3A22791903E /* Frameworks */,
@@ -105,19 +107,19 @@
 		0432E1162343CB4500874AF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0432E1152343CB4500874AF3 /* NetworkApiArticle.app */,
+				0432E1152343CB4500874AF3 /* Swift-Network-Dao.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0432E1172343CB4500874AF3 /* NetworkApiArticle */ = {
+		0432E1172343CB4500874AF3 /* SwiftNetworkDao */ = {
 			isa = PBXGroup;
 			children = (
 				0432E12C2343CEDB00874AF3 /* src */,
 				0432E12D2343CF0900874AF3 /* ui */,
 				0432E12E2343CF1200874AF3 /* resources */,
 			);
-			path = NetworkApiArticle;
+			path = SwiftNetworkDao;
 			sourceTree = "<group>";
 		};
 		0432E12C2343CEDB00874AF3 /* src */ = {
@@ -212,8 +214,7 @@
 		0432E1362343CFBD00874AF3 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				04C78A4C235B3EFD0077769F /* DomainBaseEntity.swift */,
-				0432E1462343D29900874AF3 /* Story.swift */,
+				04C78A4E235B42DB0077769F /* domain-entities */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -294,9 +295,9 @@
 		04C78A27235B3EBF0077769F /* core-data */ = {
 			isa = PBXGroup;
 			children = (
+				04C78A2A235B3EBF0077769F /* db-entities */,
 				04C78A28235B3EBF0077769F /* StorageContext+Extension.swift */,
 				04C78A29235B3EBF0077769F /* CoreDataStoreCoordinator.swift */,
-				04C78A2A235B3EBF0077769F /* model */,
 				04C78A2E235B3EBF0077769F /* medium-db.xcdatamodeld */,
 				04C78A30235B3EBF0077769F /* CoreDataStorageContext.swift */,
 				04C78A31235B3EBF0077769F /* CoreDataStorageContext+Operations.swift */,
@@ -304,14 +305,14 @@
 			path = "core-data";
 			sourceTree = "<group>";
 		};
-		04C78A2A235B3EBF0077769F /* model */ = {
+		04C78A2A235B3EBF0077769F /* db-entities */ = {
 			isa = PBXGroup;
 			children = (
 				04C78A2B235B3EBF0077769F /* StoryEntity+CoreDataProperties.swift */,
 				04C78A2C235B3EBF0077769F /* StoryEntity+CoreDataClass.swift */,
 				04C78A2D235B3EBF0077769F /* NSManagedObject+Storable.swift */,
 			);
-			path = model;
+			path = "db-entities";
 			sourceTree = "<group>";
 		};
 		04C78A32235B3EBF0077769F /* dao */ = {
@@ -333,10 +334,19 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		04C78A4E235B42DB0077769F /* domain-entities */ = {
+			isa = PBXGroup;
+			children = (
+				04C78A4C235B3EFD0077769F /* DomainBaseEntity.swift */,
+				0432E1462343D29900874AF3 /* Story.swift */,
+			);
+			path = "domain-entities";
+			sourceTree = "<group>";
+		};
 		3A6BB1D8D8B2E3A22791903E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				41314B23F4EF6EE99F5C628B /* Pods_NetworkApiArticle.framework */,
+				4CE096ADC11D32BCA22B4BCB /* Pods_Swift_Network_Dao.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -346,6 +356,8 @@
 			children = (
 				FE7876A8655AA75546841C0D /* Pods-NetworkApiArticle.debug.xcconfig */,
 				B86C6009A65ED886DE62F5C1 /* Pods-NetworkApiArticle.release.xcconfig */,
+				AF83523A8CF24E93A041FEC1 /* Pods-Swift-Network-Dao.debug.xcconfig */,
+				35618A49731FC5B7F0B740B2 /* Pods-Swift-Network-Dao.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -353,9 +365,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0432E1142343CB4500874AF3 /* NetworkApiArticle */ = {
+		0432E1142343CB4500874AF3 /* Swift-Network-Dao */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0432E1292343CB4900874AF3 /* Build configuration list for PBXNativeTarget "NetworkApiArticle" */;
+			buildConfigurationList = 0432E1292343CB4900874AF3 /* Build configuration list for PBXNativeTarget "Swift-Network-Dao" */;
 			buildPhases = (
 				EA6C10FC8BF726495F97584E /* [CP] Check Pods Manifest.lock */,
 				0432E1112343CB4500874AF3 /* Sources */,
@@ -367,9 +379,9 @@
 			);
 			dependencies = (
 			);
-			name = NetworkApiArticle;
+			name = "Swift-Network-Dao";
 			productName = NetworkApiArticle;
-			productReference = 0432E1152343CB4500874AF3 /* NetworkApiArticle.app */;
+			productReference = 0432E1152343CB4500874AF3 /* Swift-Network-Dao.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -387,7 +399,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0432E1102343CB4500874AF3 /* Build configuration list for PBXProject "NetworkApiArticle" */;
+			buildConfigurationList = 0432E1102343CB4500874AF3 /* Build configuration list for PBXProject "Swift-Network-Dao" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -400,7 +412,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0432E1142343CB4500874AF3 /* NetworkApiArticle */,
+				0432E1142343CB4500874AF3 /* Swift-Network-Dao */,
 			);
 		};
 /* End PBXProject section */
@@ -425,15 +437,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EA6C10FC8BF726495F97584E /* [CP] Check Pods Manifest.lock */ = {
@@ -451,7 +463,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NetworkApiArticle-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Swift-Network-Dao-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -634,18 +646,18 @@
 		};
 		0432E12A2343CB4900874AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE7876A8655AA75546841C0D /* Pods-NetworkApiArticle.debug.xcconfig */;
+			baseConfigurationReference = AF83523A8CF24E93A041FEC1 /* Pods-Swift-Network-Dao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDGR7H5724;
-				INFOPLIST_FILE = "$(SRCROOT)/NetworkApiArticle/resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftNetworkDao/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scykum.ios.network.article;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Swift-Network-Dao";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -653,18 +665,18 @@
 		};
 		0432E12B2343CB4900874AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B86C6009A65ED886DE62F5C1 /* Pods-NetworkApiArticle.release.xcconfig */;
+			baseConfigurationReference = 35618A49731FC5B7F0B740B2 /* Pods-Swift-Network-Dao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HDGR7H5724;
-				INFOPLIST_FILE = "$(SRCROOT)/NetworkApiArticle/resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftNetworkDao/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scykum.ios.network.article;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Swift-Network-Dao";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -673,7 +685,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0432E1102343CB4500874AF3 /* Build configuration list for PBXProject "NetworkApiArticle" */ = {
+		0432E1102343CB4500874AF3 /* Build configuration list for PBXProject "Swift-Network-Dao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0432E1272343CB4900874AF3 /* Debug */,
@@ -682,7 +694,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0432E1292343CB4900874AF3 /* Build configuration list for PBXNativeTarget "NetworkApiArticle" */ = {
+		0432E1292343CB4900874AF3 /* Build configuration list for PBXNativeTarget "Swift-Network-Dao" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0432E12A2343CB4900874AF3 /* Debug */,
