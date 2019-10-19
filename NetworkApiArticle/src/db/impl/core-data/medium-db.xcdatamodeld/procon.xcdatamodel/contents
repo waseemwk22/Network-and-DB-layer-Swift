@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A582a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StoryEntity" representedClassName=".StoryEntity" syncable="YES">
+        <attribute name="clapsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="published" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="storyNumber" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="StoryEntity" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>

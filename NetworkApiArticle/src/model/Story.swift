@@ -5,8 +5,8 @@
 
 import UIKit
 
-class Story: Codable {
-    var storyId: Int?
+class Story: DomainBaseEntity, Codable {
+    var storyNumber: Int?
     var clapsCount: Int?
     var title: String?
     var published: Bool?

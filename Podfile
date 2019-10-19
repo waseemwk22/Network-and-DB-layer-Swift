@@ -6,4 +6,5 @@ target 'NetworkApiArticle' do
   pod 'Alamofire'
   pod 'MBProgressHUD'
   pod 'SwiftyJSON'
+  pod 'Runtime'
 end
