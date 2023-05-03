@@ -10,7 +10,7 @@ class CoreDataStorageContext: StorageContext {
 
     var managedContext: NSManagedObjectContext?
 
-    required init(configuration: ConfigurationType = .basic(identifier: "procon")) {
+    required init(configuration: ConfigurationType = .basic(identifier: "medium-db")) {
         switch configuration {
         case .basic:
             initDB(modelName: configuration.identifier(), storeType: .sqLiteStoreType)

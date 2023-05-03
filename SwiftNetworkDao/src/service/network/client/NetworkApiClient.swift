@@ -14,7 +14,7 @@ class NetworkApiClient {
     func callApi<T>(request: ApiRequest<T>, responseHandler: @escaping ResponseHandler) {
 
         let urlRequest = urlRequestWith(apiRequest: request)
-        Alamofire.request(urlRequest).responseData { (response) in
+        AF.request(urlRequest).responseData { (response) in
             switch(response.result) {
             case .success:
                 let apiResponse = self.successResponse(request: request, response: response)
@@ -38,7 +38,7 @@ class NetworkApiClient {
 
     // here we are going to parse the data
     func successResponse<T: Codable>(request: ApiRequest<T>,
-                                     response: DataResponse<Data>) -> ApiResponse{
+                                     response: AFDataResponse<Data>) -> ApiResponse{
         do {
             // Step 1
             let responseJson = try JSON(data: response.data!)
@@ -56,7 +56,7 @@ class NetworkApiClient {
         }
     }
 
-    func failureResponse(response: DataResponse<Data>) {
+    func failureResponse(response: AFDataResponse<Data>) {
         // do something here
     }
 

@@ -650,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDGR7H5724;
+				DEVELOPMENT_TEAM = 53S3F29528;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftNetworkDao/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -669,7 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HDGR7H5724;
+				DEVELOPMENT_TEAM = 53S3F29528;
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftNetworkDao/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
