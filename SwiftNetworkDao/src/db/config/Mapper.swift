@@ -8,7 +8,6 @@ import Runtime
 import CoreData
 
 class Mapper {
-
     class func copy<DomainEntity: Mappable>(from domainEntity: DomainEntity,
                                             target dbEntity: inout DomainEntity) {
         let info = try? typeInfo(of: DomainEntity.self)

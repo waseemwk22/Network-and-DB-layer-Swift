@@ -6,7 +6,6 @@
 import UIKit
 
 class DBManager {
-
     // MARK: - Private properties
     private var storageContext: StorageContext?
 
@@ -15,9 +14,7 @@ class DBManager {
 
     lazy var storyDao = StoryDao(storageContext: storageContextImpl())
 
-    private init() {
-
-    }
+    private init() {}
 
     static func setup(storageContext: StorageContext) {
         shared.storageContext = storageContext
@@ -29,5 +26,4 @@ class DBManager {
         }
         fatalError("You must call setup to configure the StoreContext before accessing any dao")
     }
-
 }

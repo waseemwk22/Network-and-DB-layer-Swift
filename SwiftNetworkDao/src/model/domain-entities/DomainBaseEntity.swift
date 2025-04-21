@@ -9,6 +9,5 @@ import CoreData
 class DomainBaseEntity: Mappable {
     var objectID: NSManagedObjectID?
 
-    required init() {
-    }
+    required init() { }
 }

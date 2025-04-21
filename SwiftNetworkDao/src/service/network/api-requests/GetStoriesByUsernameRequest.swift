@@ -6,7 +6,6 @@
 import Foundation
 
 class GetStoriesByUsernameRequest: ApiRequest<[Story]> {
-
     var username: String!
     var limit: Int?
     var pageNumber: Int?
@@ -27,7 +26,6 @@ class GetStoriesByUsernameRequest: ApiRequest<[Story]> {
     override func requestType() -> HTTPMethod {
         return .get
     }
-
 }
 
 

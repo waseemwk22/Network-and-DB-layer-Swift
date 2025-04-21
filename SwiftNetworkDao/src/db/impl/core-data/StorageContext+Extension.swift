@@ -7,7 +7,6 @@ import Foundation
 import CoreData
 
 extension StorageContext {
-
     func objectWithObjectId<DBEntity: Storable>(objectId: NSManagedObjectID) -> DBEntity? {
         return nil
     }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,10 @@
 		04C78A4A235B3ED40077769F /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78A48235B3ED40077769F /* HttpMethod.swift */; };
 		04C78A4B235B3ED40077769F /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78A49235B3ED40077769F /* ApiResponse.swift */; };
 		04C78A4D235B3EFD0077769F /* DomainBaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C78A4C235B3EFD0077769F /* DomainBaseEntity.swift */; };
-		851CA5595B7876B8173CCBCC /* Pods_Swift_Network_Dao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE096ADC11D32BCA22B4BCB /* Pods_Swift_Network_Dao.framework */; };
+		22EBE3942DB685A10046BEC2 /* Runtime in Frameworks */ = {isa = PBXBuildFile; productRef = 22EBE3932DB685A10046BEC2 /* Runtime */; };
+		22EBE3972DB685D20046BEC2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 22EBE3962DB685D20046BEC2 /* Alamofire */; };
+		22EBE39C2DB686020046BEC2 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 22EBE39B2DB686020046BEC2 /* MBProgressHUD */; };
+		22EBE39F2DB6860E0046BEC2 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 22EBE39E2DB6860E0046BEC2 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,11 +78,6 @@
 		04C78A48235B3ED40077769F /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		04C78A49235B3ED40077769F /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		04C78A4C235B3EFD0077769F /* DomainBaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainBaseEntity.swift; sourceTree = "<group>"; };
-		35618A49731FC5B7F0B740B2 /* Pods-Swift-Network-Dao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Network-Dao.release.xcconfig"; path = "Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao.release.xcconfig"; sourceTree = "<group>"; };
-		4CE096ADC11D32BCA22B4BCB /* Pods_Swift_Network_Dao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Network_Dao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF83523A8CF24E93A041FEC1 /* Pods-Swift-Network-Dao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-Network-Dao.debug.xcconfig"; path = "Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao.debug.xcconfig"; sourceTree = "<group>"; };
-		B86C6009A65ED886DE62F5C1 /* Pods-NetworkApiArticle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkApiArticle.release.xcconfig"; path = "Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle.release.xcconfig"; sourceTree = "<group>"; };
-		FE7876A8655AA75546841C0D /* Pods-NetworkApiArticle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkApiArticle.debug.xcconfig"; path = "Target Support Files/Pods-NetworkApiArticle/Pods-NetworkApiArticle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				851CA5595B7876B8173CCBCC /* Pods_Swift_Network_Dao.framework in Frameworks */,
+				22EBE3942DB685A10046BEC2 /* Runtime in Frameworks */,
+				22EBE39C2DB686020046BEC2 /* MBProgressHUD in Frameworks */,
+				22EBE39F2DB6860E0046BEC2 /* SwiftyJSON in Frameworks */,
+				22EBE3972DB685D20046BEC2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +100,6 @@
 			children = (
 				0432E1172343CB4500874AF3 /* SwiftNetworkDao */,
 				0432E1162343CB4500874AF3 /* Products */,
-				3A7519BD6B535112B7EF208F /* Pods */,
-				3A6BB1D8D8B2E3A22791903E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,7 +128,6 @@
 				0432E1352343CFB800874AF3 /* service */,
 				04C78A1E235B3EA30077769F /* db */,
 				0432E1362343CFBD00874AF3 /* model */,
-				0432E1372343CFC400874AF3 /* helper */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -146,50 +144,10 @@
 		0432E12E2343CF1200874AF3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				0432E1332343CFA800874AF3 /* env */,
-				0432E1322343CF9900874AF3 /* localization */,
-				0432E1312343CF8E00874AF3 /* fonts */,
-				0432E1302343CF8900874AF3 /* colors */,
-				0432E12F2343CF8400874AF3 /* images */,
 				0432E1262343CB4900874AF3 /* Info.plist */,
 				0432E1212343CB4900874AF3 /* Assets.xcassets */,
 			);
 			path = resources;
-			sourceTree = "<group>";
-		};
-		0432E12F2343CF8400874AF3 /* images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		0432E1302343CF8900874AF3 /* colors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = colors;
-			sourceTree = "<group>";
-		};
-		0432E1312343CF8E00874AF3 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
-		0432E1322343CF9900874AF3 /* localization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = localization;
-			sourceTree = "<group>";
-		};
-		0432E1332343CFA800874AF3 /* env */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = env;
 			sourceTree = "<group>";
 		};
 		0432E1342343CFB300874AF3 /* view */ = {
@@ -217,13 +175,6 @@
 				04C78A4E235B42DB0077769F /* domain-entities */,
 			);
 			path = model;
-			sourceTree = "<group>";
-		};
-		0432E1372343CFC400874AF3 /* helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = helper;
 			sourceTree = "<group>";
 		};
 		0432E1382343CFE100874AF3 /* network */ = {
@@ -343,25 +294,6 @@
 			path = "domain-entities";
 			sourceTree = "<group>";
 		};
-		3A6BB1D8D8B2E3A22791903E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4CE096ADC11D32BCA22B4BCB /* Pods_Swift_Network_Dao.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3A7519BD6B535112B7EF208F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FE7876A8655AA75546841C0D /* Pods-NetworkApiArticle.debug.xcconfig */,
-				B86C6009A65ED886DE62F5C1 /* Pods-NetworkApiArticle.release.xcconfig */,
-				AF83523A8CF24E93A041FEC1 /* Pods-Swift-Network-Dao.debug.xcconfig */,
-				35618A49731FC5B7F0B740B2 /* Pods-Swift-Network-Dao.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,11 +301,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0432E1292343CB4900874AF3 /* Build configuration list for PBXNativeTarget "Swift-Network-Dao" */;
 			buildPhases = (
-				EA6C10FC8BF726495F97584E /* [CP] Check Pods Manifest.lock */,
 				0432E1112343CB4500874AF3 /* Sources */,
 				0432E1122343CB4500874AF3 /* Frameworks */,
 				0432E1132343CB4500874AF3 /* Resources */,
-				1E88950539F4BE3CBA202735 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,6 +338,12 @@
 				Base,
 			);
 			mainGroup = 0432E10C2343CB4500874AF3;
+			packageReferences = (
+				22EBE3922DB685A10046BEC2 /* XCRemoteSwiftPackageReference "Runtime" */,
+				22EBE3952DB685D20046BEC2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				22EBE39A2DB686020046BEC2 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				22EBE39D2DB6860E0046BEC2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 0432E1162343CB4500874AF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,48 +365,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1E88950539F4BE3CBA202735 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swift-Network-Dao/Pods-Swift-Network-Dao-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA6C10FC8BF726495F97584E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Swift-Network-Dao-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0432E1112343CB4500874AF3 /* Sources */ = {
@@ -646,7 +540,6 @@
 		};
 		0432E12A2343CB4900874AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF83523A8CF24E93A041FEC1 /* Pods-Swift-Network-Dao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,6 +549,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scykum.ios.network.article;
 				PRODUCT_NAME = "Swift-Network-Dao";
 				SWIFT_VERSION = 5.0;
@@ -665,7 +559,6 @@
 		};
 		0432E12B2343CB4900874AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35618A49731FC5B7F0B740B2 /* Pods-Swift-Network-Dao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,6 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scykum.ios.network.article;
 				PRODUCT_NAME = "Swift-Network-Dao";
 				SWIFT_VERSION = 5.0;
@@ -704,6 +598,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22EBE3922DB685A10046BEC2 /* XCRemoteSwiftPackageReference "Runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wickwirew/Runtime.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.7;
+			};
+		};
+		22EBE3952DB685D20046BEC2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		22EBE39A2DB686020046BEC2 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		22EBE39D2DB6860E0046BEC2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22EBE3932DB685A10046BEC2 /* Runtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22EBE3922DB685A10046BEC2 /* XCRemoteSwiftPackageReference "Runtime" */;
+			productName = Runtime;
+		};
+		22EBE3962DB685D20046BEC2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22EBE3952DB685D20046BEC2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		22EBE39B2DB686020046BEC2 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22EBE39A2DB686020046BEC2 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		22EBE39E2DB6860E0046BEC2 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22EBE39D2DB6860E0046BEC2 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		04C78A2E235B3EBF0077769F /* medium-db.xcdatamodeld */ = {

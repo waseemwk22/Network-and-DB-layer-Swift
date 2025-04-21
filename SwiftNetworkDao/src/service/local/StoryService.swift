@@ -9,23 +9,19 @@ typealias CompletionHandler =  (Bool, AnyObject?) -> Void
 
 class StoryService {
 
-
     /// Create & save story to database
     /// - Parameter story: story domain entity
     func createStory(story: Story) {
         do {
             try DBManager.shared.storyDao.save(object: story)
-        } catch {
-        }
+        } catch {}
     }
-
 
     /// fetch story by story number
     /// - Parameter storyNumber: storynumber
     func fetchStoryByStoryNumber(storyNumber: String) -> Story? {
         return DBManager.shared.storyDao.findById(storyNumber: storyNumber)
     }
-
 
     /// fetch stories from API
     /// - Parameter username: user
@@ -45,5 +41,4 @@ class StoryService {
             }
         }
     }
-
 }

@@ -10,7 +10,6 @@ import SwiftyJSON
 typealias ResponseHandler = (ApiResponse) -> Void
 
 class NetworkApiClient {
-
     func callApi<T>(request: ApiRequest<T>, responseHandler: @escaping ResponseHandler) {
 
         let urlRequest = urlRequestWith(apiRequest: request)
@@ -59,5 +58,4 @@ class NetworkApiClient {
     func failureResponse(response: AFDataResponse<Data>) {
         // do something here
     }
-
 }

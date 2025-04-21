@@ -12,7 +12,6 @@ public enum StoreType: String {
 }
 
 class CoreDataStoreCoordinator {
-
     static func persistentStoreCoordinator(modelName: String? = nil, storeType: StoreType = .sqLiteStoreType) -> NSPersistentStoreCoordinator? {
         do {
             return try NSPersistentStoreCoordinator.coordinator(modelName: modelName, storeType: storeType)
@@ -24,7 +23,6 @@ class CoreDataStoreCoordinator {
 }
 
 extension NSPersistentStoreCoordinator {
-
     /// NSPersistentStoreCoordinator error types
     public enum CoordinatorError: Error {
         /// .momd file not found
@@ -59,7 +57,6 @@ extension NSPersistentStoreCoordinator {
 }
 
 extension NSPersistentStoreCoordinator {
-
     func configureSQLiteStore(name: String) throws {
         guard let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last else {
             throw CoordinatorError.storePathNotFound
@@ -90,5 +87,4 @@ extension NSPersistentStoreCoordinator {
             }
         }
     }
-
 }

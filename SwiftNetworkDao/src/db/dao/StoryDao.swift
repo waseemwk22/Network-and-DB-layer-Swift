@@ -6,7 +6,6 @@
 import UIKit
 
 class StoryDao: BaseDao<Story, StoryEntity> {
-
     func findById(storyNumber: String) -> Story? {
         return super.fetch(predicate: NSPredicate(format: "storyNumber = %"+storyNumber)).last
     }
