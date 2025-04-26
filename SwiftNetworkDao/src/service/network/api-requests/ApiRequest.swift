@@ -10,9 +10,9 @@ class ApiRequest<T: Codable> {
 
     func webserviceUrl() -> String {
         #if DEBUG
-        return "https:www.dev.medium.com/"
+        return Settings.shared.properties.debugServerUrl
         #else
-        return "https:www.medium.com/"
+        return Settings.shared.properties.liveServerUrl
         #endif
     }
 
